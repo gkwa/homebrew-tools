@@ -5,14 +5,14 @@
 class Cloudelf < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.28"
+  version "0.0.4"
 
   on_macos do
-    url "https://github.com/taylormonacelli/cloudelf/releases/download/v0.0.28/cloudelf_Darwin_x86_64.tar.gz"
-    sha256 "cdfaaa83b1108978fedf57e9b23eabf21dd75ae93d8c4842f06c269f7fb25b9f"
+    url "https://github.com/taylormonacelli/fogcrow/releases/download/v0.0.4/fogcrow_Darwin_x86_64.tar.gz"
+    sha256 "da1a0bf6d5199fd95fd7b1e98801ec7fedc244ce584b6b5b939b9ce20a4aef46"
 
     def install
-      bin.install "cloudelf"
+      bin.install "fogcrow"
     end
 
     if Hardware::CPU.arm?
@@ -28,11 +28,11 @@ class Cloudelf < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/taylormonacelli/cloudelf/releases/download/v0.0.28/cloudelf_Linux_x86_64.tar.gz"
-      sha256 "89f9e76c773495f4b3067c3dba5e06a6a985fa597cafd37ce6b58dd0fc915b2b"
+      url "https://github.com/taylormonacelli/fogcrow/releases/download/v0.0.4/fogcrow_Linux_x86_64.tar.gz"
+      sha256 "94e457032ec3ef43aa6bad5ef9d8a4aa9ab9afd3c5a11e79eb75f9538d0be393"
 
       def install
-        bin.install "cloudelf"
+        bin.install "fogcrow"
       end
     end
   end
