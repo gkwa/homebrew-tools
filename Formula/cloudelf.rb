@@ -5,11 +5,11 @@
 class Cloudelf < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.30"
+  version "0.0.32"
 
   on_macos do
-    url "https://github.com/taylormonacelli/cloudelf/releases/download/v0.0.30/cloudelf_Darwin_x86_64.tar.gz"
-    sha256 "c4ceccd7f2f884959b88f151aa1c08989f896cbbcd83b4ce251c7d911b36ea01"
+    url "https://github.com/taylormonacelli/cloudelf/releases/download/v0.0.32/cloudelf_Darwin_x86_64.tar.gz"
+    sha256 "8f390e3bede514205a64791561ce0c8d14b33070fb612efe4c75dc5594c12450"
 
     def install
       bin.install "cloudelf"
@@ -28,8 +28,8 @@ class Cloudelf < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/taylormonacelli/cloudelf/releases/download/v0.0.30/cloudelf_Linux_x86_64.tar.gz"
-      sha256 "f8ca0635f45dcaea0b33af52e392367330368d65204a3886ec116a67cb87aa1a"
+      url "https://github.com/taylormonacelli/cloudelf/releases/download/v0.0.32/cloudelf_Linux_x86_64.tar.gz"
+      sha256 "dcfea88e8fbd8560ff48e2b58d0adb8ea6541a488cca286ad890ffd35d31f148"
 
       def install
         bin.install "cloudelf"
