@@ -5,11 +5,11 @@
 class Fogcrow < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
-    url "https://github.com/taylormonacelli/fogcrow/releases/download/v0.0.6/fogcrow_Darwin_x86_64.tar.gz"
-    sha256 "3d2e43f4e971f03e597b99e036b10af75d4cd2de2fec31714fcffc56cf530fa4"
+    url "https://github.com/gkwa/fogcrow/releases/download/v0.0.7/fogcrow_Darwin_x86_64.tar.gz"
+    sha256 "87c3bd1de2b86114a556bf7ed05da7e26eefd544086466acfa8c3c96f43b9715"
 
     def install
       bin.install "fogcrow"
@@ -28,8 +28,8 @@ class Fogcrow < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/taylormonacelli/fogcrow/releases/download/v0.0.6/fogcrow_Linux_x86_64.tar.gz"
-      sha256 "801eb86adb2f79bb62b9d70b4494ddbc779ceba76e98b0c8044cae20fceb93e4"
+      url "https://github.com/gkwa/fogcrow/releases/download/v0.0.7/fogcrow_Linux_x86_64.tar.gz"
+      sha256 "4b5eca188f3e04fcc0a2dfa18eb2e338e238fc29b3735ab1b87f07cd0c7e6770"
 
       def install
         bin.install "fogcrow"
