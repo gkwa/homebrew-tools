@@ -5,11 +5,11 @@
 class Quarterlydive < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
-    url "https://github.com/gkwa/quarterlydive/releases/download/v0.0.2/quarterlydive_Darwin_x86_64.tar.gz"
-    sha256 "688d191c902b87af69fdd99556d6ff52410850c9eaf5eac329cca17f38e53fe5"
+    url "https://github.com/gkwa/quarterlydive/releases/download/v0.0.3/quarterlydive_Darwin_x86_64.tar.gz"
+    sha256 "7a6002ba8d13965193b844aea0c1a57790f11a11c92dc5b0aa952299c0f7706b"
 
     def install
       bin.install "quarterlydive"
@@ -28,8 +28,8 @@ class Quarterlydive < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gkwa/quarterlydive/releases/download/v0.0.2/quarterlydive_Linux_x86_64.tar.gz"
-      sha256 "1437ad68ec67d87cffaa644c6b34b8dc14db1e2a15f1fca2b6a10500629c3a10"
+      url "https://github.com/gkwa/quarterlydive/releases/download/v0.0.3/quarterlydive_Linux_x86_64.tar.gz"
+      sha256 "a1e5f7ea5d691489afdf544f4d4f72633152d8b410d86efb6d318af10227b0a9"
 
       def install
         bin.install "quarterlydive"
