@@ -5,11 +5,11 @@
 class Howbob < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
-    url "https://github.com/gkwa/howbob/releases/download/v0.0.4/howbob_Darwin_x86_64.tar.gz"
-    sha256 "01f371d4df1222c2648de317032d145d6d48b7410ec95563b46cd4fdaaecf5ad"
+    url "https://github.com/gkwa/howbob/releases/download/v0.0.5/howbob_Darwin_x86_64.tar.gz"
+    sha256 "2201166bf31f6b6d07d810c1d9cf8e302e701754c302ae39940cbb19288444fa"
 
     def install
       bin.install "howbob"
@@ -28,8 +28,8 @@ class Howbob < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gkwa/howbob/releases/download/v0.0.4/howbob_Linux_x86_64.tar.gz"
-      sha256 "b672e0fc2fdf71e0c07a8173066bec5d1a203c4c5ada639d417f7a25376697fa"
+      url "https://github.com/gkwa/howbob/releases/download/v0.0.5/howbob_Linux_x86_64.tar.gz"
+      sha256 "5ee89093740eefd311b2bb7bd4863dd15bbe21d7a13546cfd268ced303b4097f"
 
       def install
         bin.install "howbob"
