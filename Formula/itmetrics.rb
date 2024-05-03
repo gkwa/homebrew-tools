@@ -5,11 +5,11 @@
 class Itmetrics < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.20"
+  version "0.0.21"
 
   on_macos do
-    url "https://github.com/gkwa/itmetrics/releases/download/v0.0.20/itmetrics_Darwin_x86_64.tar.gz"
-    sha256 "3972318be08e6c0d386ef19452f6e7fdd36ec6f68013676401a8b374e0ac00fd"
+    url "https://github.com/gkwa/itmetrics/releases/download/v0.0.21/itmetrics_Darwin_x86_64.tar.gz"
+    sha256 "9dc553a8fa88cecce3ab47c3e2f7e6ade971eac1f0c5a415e7d1f18a0d3c5a2d"
 
     def install
       bin.install "itmetrics"
@@ -28,8 +28,8 @@ class Itmetrics < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gkwa/itmetrics/releases/download/v0.0.20/itmetrics_Linux_x86_64.tar.gz"
-      sha256 "0d14dcd9e10eeb0691c2431c33e04b5c6f41d22fda4f36c88b568fe77e15df69"
+      url "https://github.com/gkwa/itmetrics/releases/download/v0.0.21/itmetrics_Linux_x86_64.tar.gz"
+      sha256 "bfd236ff704d58b4a2d270d24684986d84b9332df44365f05cc0f261840c86de"
 
       def install
         bin.install "itmetrics"
