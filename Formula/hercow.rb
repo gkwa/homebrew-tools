@@ -5,11 +5,11 @@
 class Hercow < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.23"
+  version "0.0.24"
 
   on_macos do
-    url "https://github.com/gkwa/hercow/releases/download/v0.0.23/hercow_Darwin_x86_64.tar.gz"
-    sha256 "664081fe3b3f139ff2b2deb64c2f08bed5b9c704fef25a20678a2729032131d2"
+    url "https://github.com/gkwa/hercow/releases/download/v0.0.24/hercow_Darwin_x86_64.tar.gz"
+    sha256 "ffc2da2c644ba2d648dac788a982775b81690513e390235e9245bd49ea953a1a"
 
     def install
       bin.install "hercow"
@@ -28,8 +28,8 @@ class Hercow < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gkwa/hercow/releases/download/v0.0.23/hercow_Linux_x86_64.tar.gz"
-      sha256 "77cd062c1f13c5835076c6b3d67a1ea10282677273f1ea8c2d8554d7476a550c"
+      url "https://github.com/gkwa/hercow/releases/download/v0.0.24/hercow_Linux_x86_64.tar.gz"
+      sha256 "0b48fa98fac9d9f5625bc01cf148c10587a3f1e4bd633339fa02471fa5bcd8ec"
 
       def install
         bin.install "hercow"
