@@ -5,11 +5,11 @@
 class Alwayswin < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    url "https://github.com/taylormonacelli/alwayswin/releases/download/v0.0.1/alwayswin_Darwin_x86_64.tar.gz"
-    sha256 "bfb268adf1faaf6d9c993917cc3036dff8afb3f1bc5fdd0a3a06a132abc93021"
+    url "https://github.com/gkwa/alwayswin/releases/download/v0.0.2/alwayswin_Darwin_x86_64.tar.gz"
+    sha256 "813be520df411785b9ac9ed7523c7af7c7eca3fba5457a3e54f5e8c79b49ea5c"
 
     def install
       bin.install "alwayswin"
@@ -28,8 +28,8 @@ class Alwayswin < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/taylormonacelli/alwayswin/releases/download/v0.0.1/alwayswin_Linux_x86_64.tar.gz"
-      sha256 "cce121108c4fb3a854878094690fbb782134a00daf1d7332ba77db08dd07dbab"
+      url "https://github.com/gkwa/alwayswin/releases/download/v0.0.2/alwayswin_Linux_x86_64.tar.gz"
+      sha256 "2c7c2a6073ab847e9d4801d808faf85109058d072c31bbf2cc5beacb28f03e81"
 
       def install
         bin.install "alwayswin"
