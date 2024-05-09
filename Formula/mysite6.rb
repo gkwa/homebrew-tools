@@ -8,8 +8,8 @@ class Mysite6 < Formula
   version "0.0.2"
 
   on_macos do
-    url "https://github.com/gkwa/mysite6/releases/download/v0.0.2/mysite6_Darwin_x86_64.tar.gz"
-    sha256 "2814d56b16321093522b5adb9f536013cb74acbc34168681643d884a2e51e476"
+    url "https://github.com/taylormonacelli/mysite6/releases/download/v0.0.2/mysite6_Darwin_x86_64.tar.gz"
+    sha256 "ba0aa7aa34593b24117c810008a3e69a8766e0a6f1f92ed48a326ef7e61cae5e"
 
     def install
       bin.install "mysite6"
@@ -28,8 +28,8 @@ class Mysite6 < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gkwa/mysite6/releases/download/v0.0.2/mysite6_Linux_x86_64.tar.gz"
-      sha256 "fe07d454ee1f20f3b3a3346c60f2263a396a670ed6296ff7ae4e4f083dad0bb8"
+      url "https://github.com/taylormonacelli/mysite6/releases/download/v0.0.2/mysite6_Linux_x86_64.tar.gz"
+      sha256 "42d2eb968ca2effb32fd05bda8b85e15e69d5b88bc276fe4efe83e113473c666"
 
       def install
         bin.install "mysite6"
