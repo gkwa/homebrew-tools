@@ -5,11 +5,11 @@
 class Fragiledonkey < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
-    url "https://github.com/gkwa/fragiledonkey/releases/download/v0.0.7/fragiledonkey_Darwin_x86_64.tar.gz"
-    sha256 "6b40d1871343dd7137718d3e019803f7264498cde07eff88e2350462e64790b9"
+    url "https://github.com/gkwa/fragiledonkey/releases/download/v0.0.8/fragiledonkey_Darwin_x86_64.tar.gz"
+    sha256 "5a17ca27ead72781d9265fe6e4ab36c7e3d2e0ff4dc4db36bd858eaabd3aa347"
 
     def install
       bin.install "fragiledonkey"
@@ -28,8 +28,8 @@ class Fragiledonkey < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gkwa/fragiledonkey/releases/download/v0.0.7/fragiledonkey_Linux_x86_64.tar.gz"
-      sha256 "5af9e9a0f03c8edf38999c0c8240561db533c8de47a83761ad9a2e56693845f9"
+      url "https://github.com/gkwa/fragiledonkey/releases/download/v0.0.8/fragiledonkey_Linux_x86_64.tar.gz"
+      sha256 "9d6fe0b2cd4d78c63506c484b4cc87752ea38c7cda0d14e8468ba7a94df2f766"
 
       def install
         bin.install "fragiledonkey"
