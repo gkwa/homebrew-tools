@@ -5,17 +5,17 @@
 class Anyoneindonesian < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/anyoneindonesian"
-  version "0.0.1"
+  version "0.0.3"
 
   on_macos do
-    url "https://github.com/taylormonacelli/anyoneindonesian/releases/download/v0.0.1/anyoneindonesian_Darwin_x86_64.tar.gz"
-    sha256 "c62b9a143bec7bcfb2fe45df5debafed046cb728fe82ad1c20257521d9232483"
+    url "https://github.com/gkwa/anyoneindonesian/releases/download/v0.0.3/anyoneindonesian_Darwin_x86_64.tar.gz"
+    sha256 "3164d163c0c7cb932651cf2b8e0a853abc70e22ae85460d59dac725709df44a4"
 
     def install
       bin.install "anyoneindonesian"
     end
 
-    if Hardware::CPU.arm?
+    on_arm do
       def caveats
         <<~EOS
           The darwin_arm64 architecture is not supported for the Anyoneindonesian
@@ -27,12 +27,14 @@ class Anyoneindonesian < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/taylormonacelli/anyoneindonesian/releases/download/v0.0.1/anyoneindonesian_Linux_x86_64.tar.gz"
-      sha256 "534d32073c5e2f578fa4fb9eb93d1eb9daa8b51d71d6d6447921d442bf9c0609"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/gkwa/anyoneindonesian/releases/download/v0.0.3/anyoneindonesian_Linux_x86_64.tar.gz"
+        sha256 "0e8b14a0c2bdb45265bf4e20911206111629d022f78045cde3dc8114c1bdcca5"
 
-      def install
-        bin.install "anyoneindonesian"
+        def install
+          bin.install "anyoneindonesian"
+        end
       end
     end
   end
