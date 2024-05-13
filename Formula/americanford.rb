@@ -5,17 +5,17 @@
 class Americanford < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/americanford"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    url "https://github.com/taylormonacelli/americanford/releases/download/v0.0.1/americanford_Darwin_x86_64.tar.gz"
-    sha256 "595f1a71156ae87c11807c7953b99dbd8a9c06c2900660e93a30b4090f7de2ba"
+    url "https://github.com/gkwa/americanford/releases/download/v0.0.2/americanford_Darwin_x86_64.tar.gz"
+    sha256 "f02095b0fad395e147bb4c02a314267baf9f820c34495dd508cc77d0911c1da2"
 
     def install
       bin.install "americanford"
     end
 
-    if Hardware::CPU.arm?
+    on_arm do
       def caveats
         <<~EOS
           The darwin_arm64 architecture is not supported for the Americanford
@@ -27,12 +27,14 @@ class Americanford < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/taylormonacelli/americanford/releases/download/v0.0.1/americanford_Linux_x86_64.tar.gz"
-      sha256 "5e9573b073a8d52eb54bbc60e857ceadc461e3850e79cd9581abdee5eecfdf83"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/gkwa/americanford/releases/download/v0.0.2/americanford_Linux_x86_64.tar.gz"
+        sha256 "8b44d13f65598a841ed30824f36af91fc79fcd3411c12c4bb88c53dcf3f3fdfc"
 
-      def install
-        bin.install "americanford"
+        def install
+          bin.install "americanford"
+        end
       end
     end
   end
