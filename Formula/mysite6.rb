@@ -5,11 +5,11 @@
 class Mysite6 < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/mysite6"
-  version "0.0.3"
+  version "0.0.1"
 
   on_macos do
-    url "https://github.com/taylormonacelli/mysite6/releases/download/v0.0.3/mysite6_Darwin_x86_64.tar.gz"
-    sha256 "1c5139b836bf94b94b940a60048bb89f4e9744cdc6a7e27b824adb676dc9e07e"
+    url "https://github.com/taylormonacelli/mysite6/releases/download/v0.0.1/mysite6_Darwin_x86_64.tar.gz"
+    sha256 "06447d95ab79e6604a7843489be9addefc25a51359aa89d5acdff0004f1977c0"
 
     def install
       bin.install "mysite6"
@@ -28,8 +28,8 @@ class Mysite6 < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/taylormonacelli/mysite6/releases/download/v0.0.3/mysite6_Linux_x86_64.tar.gz"
-      sha256 "778dd37042f0c6a74a6e7718d9181abe88b11916973e31012c4632f6619ba252"
+      url "https://github.com/taylormonacelli/mysite6/releases/download/v0.0.1/mysite6_Linux_x86_64.tar.gz"
+      sha256 "6bc79497ae78919b0decc0c005da2eddfa8422323664dd80fd1301636fbabe0a"
 
       def install
         bin.install "mysite6"
