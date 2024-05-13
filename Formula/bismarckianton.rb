@@ -5,17 +5,17 @@
 class Bismarckianton < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/bismarckianton"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
-    url "https://github.com/taylormonacelli/bismarckianton/releases/download/v0.0.7/bismarckianton_Darwin_x86_64.tar.gz"
-    sha256 "97d26f557d3ba69eef0b89a5ed1a93fb0c32df899878f3029dfff85088558cdc"
+    url "https://github.com/gkwa/bismarckianton/releases/download/v0.0.8/bismarckianton_Darwin_x86_64.tar.gz"
+    sha256 "07b94b82a8fae414651e7dd0a1f9230809ad3e60bbf7b1e74c45a81609714e43"
 
     def install
       bin.install "bismarckianton"
     end
 
-    if Hardware::CPU.arm?
+    on_arm do
       def caveats
         <<~EOS
           The darwin_arm64 architecture is not supported for the Bismarckianton
@@ -27,12 +27,14 @@ class Bismarckianton < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/taylormonacelli/bismarckianton/releases/download/v0.0.7/bismarckianton_Linux_x86_64.tar.gz"
-      sha256 "54863a9a4cbf430bdfb692703192c06018d0138847d3e872149d0c010077e1c9"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/gkwa/bismarckianton/releases/download/v0.0.8/bismarckianton_Linux_x86_64.tar.gz"
+        sha256 "cb7ed31272b00b28283ca0a49929224d95407c6f843040e6603e84b83a3d5090"
 
-      def install
-        bin.install "bismarckianton"
+        def install
+          bin.install "bismarckianton"
+        end
       end
     end
   end
