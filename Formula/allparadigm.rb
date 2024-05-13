@@ -5,11 +5,11 @@
 class Allparadigm < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/allparadigm"
-  version "0.0.4"
+  version "0.0.6"
 
   on_macos do
-    url "https://github.com/gkwa/allparadigm/releases/download/v0.0.4/allparadigm_Darwin_x86_64.tar.gz"
-    sha256 "8a5bc29746eafc18bccbf6c055b3f642fa790731e9f23c0f962a1cb31e85d1f5"
+    url "https://github.com/gkwa/allparadigm/releases/download/v0.0.6/allparadigm_Darwin_x86_64.tar.gz"
+    sha256 "f943b6a6d9efb79b71de46d5f615968373833b88868707befd38109d0c53e98d"
 
     def install
       bin.install "allparadigm"
@@ -29,8 +29,8 @@ class Allparadigm < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/allparadigm/releases/download/v0.0.4/allparadigm_Linux_x86_64.tar.gz"
-        sha256 "163bdb2b27c06b7d3263bc3e12f71ebdfac3796e054f93607fab2787058c0943"
+        url "https://github.com/gkwa/allparadigm/releases/download/v0.0.6/allparadigm_Linux_x86_64.tar.gz"
+        sha256 "df3725a29f9d8d3d7ee8b333e3e37583b84a961ec10695e4bf8311d87fb843eb"
 
         def install
           bin.install "allparadigm"
