@@ -5,11 +5,11 @@
 class Bismarckianton < Formula
   desc ""
   homepage "https://github.com/gkwa/bismarckianton"
-  version "0.0.1"
+  version "0.0.3"
 
   on_macos do
-    url "https://github.com/taylormonacelli/bismarckianton/releases/download/v0.0.1/bismarckianton_Darwin_x86_64.tar.gz"
-    sha256 "f96ac47424b4b1e9f72044bc743060ef35e1156fa71c81073432fb1a77559bd9"
+    url "https://github.com/taylormonacelli/bismarckianton/releases/download/v0.0.3/bismarckianton_Darwin_x86_64.tar.gz"
+    sha256 "d47a2854cb30ab91d28a8b5db6b679744347eb15a650031cc266cf674ae6fe39"
 
     def install
       bin.install "bismarckianton"
@@ -28,8 +28,8 @@ class Bismarckianton < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/taylormonacelli/bismarckianton/releases/download/v0.0.1/bismarckianton_Linux_x86_64.tar.gz"
-      sha256 "052b72025e5742fbc5fc65e3aa1175c03866b4783c7953dd7436d6813fdfe5b6"
+      url "https://github.com/taylormonacelli/bismarckianton/releases/download/v0.0.3/bismarckianton_Linux_x86_64.tar.gz"
+      sha256 "0561b395a1f70b7182268a34c8cde41ba19f709975f165faae03dc3a89fd22bb"
 
       def install
         bin.install "bismarckianton"
