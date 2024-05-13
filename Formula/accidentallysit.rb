@@ -5,17 +5,17 @@
 class Accidentallysit < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/accidentallysit"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    url "https://github.com/taylormonacelli/accidentallysit/releases/download/v0.0.1/accidentallysit_Darwin_x86_64.tar.gz"
-    sha256 "14396ed399cdfe129b07b1c2ae1160a0904c15066de02974c7a54e443a15d824"
+    url "https://github.com/gkwa/accidentallysit/releases/download/v0.0.2/accidentallysit_Darwin_x86_64.tar.gz"
+    sha256 "ee06d4ac0e3317f8e95537ce95eceba59da6a9a4e0031d0fcd94a0db7cd0036f"
 
     def install
       bin.install "accidentallysit"
     end
 
-    if Hardware::CPU.arm?
+    on_arm do
       def caveats
         <<~EOS
           The darwin_arm64 architecture is not supported for the Accidentallysit
@@ -27,12 +27,14 @@ class Accidentallysit < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/taylormonacelli/accidentallysit/releases/download/v0.0.1/accidentallysit_Linux_x86_64.tar.gz"
-      sha256 "f9ce6b6d80d9d9755b55260d0e963c7d0eafb2a391be8f84778f2f6a2b601f10"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/gkwa/accidentallysit/releases/download/v0.0.2/accidentallysit_Linux_x86_64.tar.gz"
+        sha256 "c13c6daf430421af61229530d537017125253f8c3549980a971e35bd69081984"
 
-      def install
-        bin.install "accidentallysit"
+        def install
+          bin.install "accidentallysit"
+        end
       end
     end
   end
