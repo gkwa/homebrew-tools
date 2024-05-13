@@ -5,11 +5,11 @@
 class Anyonea8l < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/anyonea8l"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
-    url "https://github.com/gkwa/anyonea8l/releases/download/v0.0.2/anyonea8l_Darwin_x86_64.tar.gz"
-    sha256 "ccc43cfd90f6e15b6021165cd106dc09c5c6a823ce5d5190bb1b68d751775a95"
+    url "https://github.com/gkwa/anyonea8l/releases/download/v0.0.3/anyonea8l_Darwin_x86_64.tar.gz"
+    sha256 "66754e313963f127246b6279da0ffdd70e7e03c0296edbfed77355ab95be7cf5"
 
     def install
       bin.install "anyonea8l"
@@ -29,8 +29,8 @@ class Anyonea8l < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/anyonea8l/releases/download/v0.0.2/anyonea8l_Linux_x86_64.tar.gz"
-        sha256 "681d8ea40952cabbe5a7c537989e2f407b37002418dc1407d694587d2427e484"
+        url "https://github.com/gkwa/anyonea8l/releases/download/v0.0.3/anyonea8l_Linux_x86_64.tar.gz"
+        sha256 "14038e1592998d3f6d321790230e834b4036beefdb28e563d6fe40207c969a1d"
 
         def install
           bin.install "anyonea8l"
