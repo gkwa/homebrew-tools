@@ -5,11 +5,11 @@
 class Annuallyis < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/annuallyis"
-  version "0.0.1"
+  version "0.0.4"
 
   on_macos do
-    url "https://github.com/gkwa/annuallyis/releases/download/v0.0.1/annuallyis_Darwin_x86_64.tar.gz"
-    sha256 "0cb2b17d432a86b125dfc94aca8e22a16cbe2a5116186a60bf039d23d0c16517"
+    url "https://github.com/gkwa/annuallyis/releases/download/v0.0.4/annuallyis_Darwin_x86_64.tar.gz"
+    sha256 "9833bc6c543d03d703b68d2acd4206fb4ae2040bcc277877d68eac496159b673"
 
     def install
       bin.install "annuallyis"
@@ -29,8 +29,8 @@ class Annuallyis < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/annuallyis/releases/download/v0.0.1/annuallyis_Linux_x86_64.tar.gz"
-        sha256 "cf55133c951989e7c66b1acaf3e6346f6309036c435379c073bc797fe0a989d7"
+        url "https://github.com/gkwa/annuallyis/releases/download/v0.0.4/annuallyis_Linux_x86_64.tar.gz"
+        sha256 "7879d823945df8571735a0951a336073ec74442871bf11b08c5c70f411dc8d62"
 
         def install
           bin.install "annuallyis"
