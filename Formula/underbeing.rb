@@ -5,11 +5,11 @@
 class Underbeing < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/underbeing"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
-    url "https://github.com/gkwa/underbeing/releases/download/v0.0.7/underbeing_Darwin_x86_64.tar.gz"
-    sha256 "28fb9330386e1df0c8cb59f58426c579e7606f1081b51226d63bcae087b6aa3a"
+    url "https://github.com/gkwa/underbeing/releases/download/v0.0.8/underbeing_Darwin_x86_64.tar.gz"
+    sha256 "6d5311dd6441816a050ae580468a1c97a6a0ca9c5faa9fbc1ae2e25fb63be84f"
 
     def install
       bin.install "underbeing"
@@ -29,8 +29,8 @@ class Underbeing < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/underbeing/releases/download/v0.0.7/underbeing_Linux_x86_64.tar.gz"
-        sha256 "8591fa2fd78d3debad0669e58b13878811275988e3b5eb82084cf5cde9d86fc0"
+        url "https://github.com/gkwa/underbeing/releases/download/v0.0.8/underbeing_Linux_x86_64.tar.gz"
+        sha256 "012e7bb9049f16ee7e07db008aa8f66fb518f890dd6411267b5c2d525c0462a5"
 
         def install
           bin.install "underbeing"
