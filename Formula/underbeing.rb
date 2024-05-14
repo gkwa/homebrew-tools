@@ -5,17 +5,17 @@
 class Underbeing < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/underbeing"
-  version "0.0.4"
+  version "0.0.6"
 
   on_macos do
-    url "https://github.com/taylormonacelli/underbeing/releases/download/v0.0.4/underbeing_Darwin_x86_64.tar.gz"
-    sha256 "86231a61b6295b50689138a0d8ee14467aaead8f2cc3fa0fe35a08d6f3d90831"
+    url "https://github.com/gkwa/underbeing/releases/download/v0.0.6/underbeing_Darwin_x86_64.tar.gz"
+    sha256 "3ec807e69be847d7f5eeea4baf2546807d149b85e274fbc0faeeefeb370b1747"
 
     def install
       bin.install "underbeing"
     end
 
-    if Hardware::CPU.arm?
+    on_arm do
       def caveats
         <<~EOS
           The darwin_arm64 architecture is not supported for the Underbeing
@@ -27,12 +27,14 @@ class Underbeing < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/taylormonacelli/underbeing/releases/download/v0.0.4/underbeing_Linux_x86_64.tar.gz"
-      sha256 "e1b3bfb01ed08f1225baa4143827bf5627f36932066189cb3489e4e9b949bad7"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/gkwa/underbeing/releases/download/v0.0.6/underbeing_Linux_x86_64.tar.gz"
+        sha256 "0fe2e5813e6bec3fd9ac5afefffb8ea30b9a6485a1dade57d67ffa37d421caf7"
 
-      def install
-        bin.install "underbeing"
+        def install
+          bin.install "underbeing"
+        end
       end
     end
   end
