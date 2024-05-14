@@ -5,11 +5,11 @@
 class Allrabbit < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/allrabbit"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
-    url "https://github.com/gkwa/allrabbit/releases/download/v0.0.3/allrabbit_Darwin_x86_64.tar.gz"
-    sha256 "366d5cb3fb75548d003754fa5fced8efa5155f0e128062853a403378ecb02037"
+    url "https://github.com/gkwa/allrabbit/releases/download/v0.0.4/allrabbit_Darwin_x86_64.tar.gz"
+    sha256 "8321d31aad132be2ee14657d9926a54d4d571d5e7b7fb6d286543029ba2a9d93"
 
     def install
       bin.install "allrabbit"
@@ -29,8 +29,8 @@ class Allrabbit < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/allrabbit/releases/download/v0.0.3/allrabbit_Linux_x86_64.tar.gz"
-        sha256 "2972174e82f7154b558a582a8d763cd863f89220454857d6f313941843f47301"
+        url "https://github.com/gkwa/allrabbit/releases/download/v0.0.4/allrabbit_Linux_x86_64.tar.gz"
+        sha256 "8714a70f20d98414d2ee9e4757a3e54eacfe2d52217a24a3315880e5adda134b"
 
         def install
           bin.install "allrabbit"
