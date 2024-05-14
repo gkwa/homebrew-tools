@@ -5,17 +5,17 @@
 class Gracefulturnip < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/gracefulturnip"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    url "https://github.com/gkwa/gracefulturnip/releases/download/v0.0.1/gracefulturnip_Darwin_x86_64.tar.gz"
-    sha256 "9a5f5694e5812e791d5bdd5ef2471c8cea290679c259fa1bd7ddfab588972627"
+    url "https://github.com/gkwa/gracefulturnip/releases/download/v0.0.2/gracefulturnip_Darwin_x86_64.tar.gz"
+    sha256 "3bc6071693e5470c3916b28f2aaf6d286232f7c0b80efbf26af0f35f4e53c6e6"
 
     def install
       bin.install "gracefulturnip"
     end
 
-    if Hardware::CPU.arm?
+    on_arm do
       def caveats
         <<~EOS
           The darwin_arm64 architecture is not supported for the Gracefulturnip
@@ -27,12 +27,14 @@ class Gracefulturnip < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/gkwa/gracefulturnip/releases/download/v0.0.1/gracefulturnip_Linux_x86_64.tar.gz"
-      sha256 "91767d79cb6b159740fc39ebb5a182200d701daa52f330e023293dbc328fe1ee"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/gkwa/gracefulturnip/releases/download/v0.0.2/gracefulturnip_Linux_x86_64.tar.gz"
+        sha256 "2ff4df1969853adbd93e3eed8d109a60d2337205826f2b03b04a8f6e12911396"
 
-      def install
-        bin.install "gracefulturnip"
+        def install
+          bin.install "gracefulturnip"
+        end
       end
     end
   end
