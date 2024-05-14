@@ -5,11 +5,11 @@
 class Gracefulturnip < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/gracefulturnip"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
-    url "https://github.com/gkwa/gracefulturnip/releases/download/v0.0.4/gracefulturnip_Darwin_x86_64.tar.gz"
-    sha256 "a55d67f0cbe15e1ef82175341f3ab1003130ca114ab8664f4dadd905074a74b2"
+    url "https://github.com/gkwa/gracefulturnip/releases/download/v0.0.5/gracefulturnip_Darwin_x86_64.tar.gz"
+    sha256 "d9f2c4ad2896ede55cd46970376ee019dd4ad644fa4d2bb87c5a3b578229154e"
 
     def install
       bin.install "gracefulturnip"
@@ -29,8 +29,8 @@ class Gracefulturnip < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/gracefulturnip/releases/download/v0.0.4/gracefulturnip_Linux_x86_64.tar.gz"
-        sha256 "0a54094faaf539a7aaf067759e3abacdd191a2d2c9d56014063a136baa5c5708"
+        url "https://github.com/gkwa/gracefulturnip/releases/download/v0.0.5/gracefulturnip_Linux_x86_64.tar.gz"
+        sha256 "bff682ac58348a261714da99525e9edcbb8013ae9028777e11e58a4a184a0a95"
 
         def install
           bin.install "gracefulturnip"
