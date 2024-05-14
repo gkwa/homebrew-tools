@@ -5,11 +5,11 @@
 class Alljuly < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/alljuly"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    url "https://github.com/gkwa/alljuly/releases/download/v0.0.1/alljuly_Darwin_x86_64.tar.gz"
-    sha256 "50b9d82e42e3434e5995aa089a6cc4cbcd8ae16e5672194d5ff89d319bdd98eb"
+    url "https://github.com/gkwa/alljuly/releases/download/v0.0.2/alljuly_Darwin_x86_64.tar.gz"
+    sha256 "d0fa003824e398ae41ae92176edaa2b434a040a775425f101f94b152b70b2bbd"
 
     def install
       bin.install "alljuly"
@@ -29,8 +29,8 @@ class Alljuly < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/alljuly/releases/download/v0.0.1/alljuly_Linux_x86_64.tar.gz"
-        sha256 "73117e1b0669708ac921fc5b0d8612fecec1a76c0bf0411eaf5beab7af3345ad"
+        url "https://github.com/gkwa/alljuly/releases/download/v0.0.2/alljuly_Linux_x86_64.tar.gz"
+        sha256 "3fb895cde57597a13c9af8594ac3498bc62abb4d34fb5b6546f76233195f399f"
 
         def install
           bin.install "alljuly"
