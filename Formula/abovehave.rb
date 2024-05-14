@@ -5,11 +5,11 @@
 class Abovehave < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/abovehave"
-  version "0.0.3"
+  version "0.0.5"
 
   on_macos do
-    url "https://github.com/gkwa/abovehave/releases/download/v0.0.3/abovehave_Darwin_x86_64.tar.gz"
-    sha256 "64801bcf200e43039f785ebd28153fcef20971a67c2af90ff209876283a20b80"
+    url "https://github.com/gkwa/abovehave/releases/download/v0.0.5/abovehave_Darwin_x86_64.tar.gz"
+    sha256 "30b0e616ca6e5976df0487565ae8127b28e1ba458d06eed90ce76e9e91969335"
 
     def install
       bin.install "abovehave"
@@ -29,8 +29,8 @@ class Abovehave < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/abovehave/releases/download/v0.0.3/abovehave_Linux_x86_64.tar.gz"
-        sha256 "c96af56434b71c757346542074714d0f5c4cfe2ce5e34fdf8cb76c8d98feb59f"
+        url "https://github.com/gkwa/abovehave/releases/download/v0.0.5/abovehave_Linux_x86_64.tar.gz"
+        sha256 "0ce240b3827adc96004fa6bdb4a4080f0c8b8cabee0b78e91892335fe66c5174"
 
         def install
           bin.install "abovehave"
