@@ -5,17 +5,17 @@
 class Manywest < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
-    url "https://github.com/gkwa/manywest/releases/download/v0.0.2/manywest_Darwin_x86_64.tar.gz"
-    sha256 "b9a73d69acbf9df9fb5a7bd7015a79ab14f499f41cbb3b3f6ef0690d36a52ab0"
+    url "https://github.com/gkwa/manywest/releases/download/v0.0.3/manywest_Darwin_x86_64.tar.gz"
+    sha256 "0951090f01e4e1e20992a6b9e99b1511a90bf48bf0188f47eb75ea57bf594fc8"
 
     def install
       bin.install "manywest"
     end
 
-    if Hardware::CPU.arm?
+    on_arm do
       def caveats
         <<~EOS
           The darwin_arm64 architecture is not supported for the Manywest
@@ -27,12 +27,14 @@ class Manywest < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/gkwa/manywest/releases/download/v0.0.2/manywest_Linux_x86_64.tar.gz"
-      sha256 "2b477581d7acbb72767c713080a9a886517ec9c298ae7dd24ef012d23765548d"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/gkwa/manywest/releases/download/v0.0.3/manywest_Linux_x86_64.tar.gz"
+        sha256 "33aa829951454e0dedeed6986e5b3854d0e3d1826881b6f13b86233bcbb4189f"
 
-      def install
-        bin.install "manywest"
+        def install
+          bin.install "manywest"
+        end
       end
     end
   end
