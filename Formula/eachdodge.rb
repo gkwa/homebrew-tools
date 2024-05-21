@@ -5,13 +5,13 @@
 class Eachdodge < Formula
   desc ""
   homepage "https://github.com/gkwa/eachdodge"
-  version "0.0.2"
+  version "0.0.3"
   depends_on :linux
 
   on_intel do
     if Hardware::CPU.is_64_bit?
-      url "https://github.com/gkwa/eachdodge/releases/download/v0.0.2/eachdodge_Linux_x86_64.tar.gz"
-      sha256 "51a01b03726fb5fdc9b7517faa982e34298543a247dab0c3b781d8528f1eb79d"
+      url "https://github.com/gkwa/eachdodge/releases/download/v0.0.3/eachdodge_Linux_x86_64.tar.gz"
+      sha256 "88c2c004605627dacf515bdecb491728e4ac3289c55053daa168715ef26df50f"
 
       def install
         bin.install "eachdodge"
