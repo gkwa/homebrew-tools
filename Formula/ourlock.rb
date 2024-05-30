@@ -5,11 +5,11 @@
 class Ourlock < Formula
   desc ""
   homepage "https://github.com/gkwa/ourlock"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
-    url "https://github.com/gkwa/ourlock/releases/download/v0.0.2/ourlock_Darwin_x86_64.tar.gz"
-    sha256 "e9c3477869696690f2b6323e6e87411d94baa369350337e33d4ab00d67f93caf"
+    url "https://github.com/gkwa/ourlock/releases/download/v0.0.3/ourlock_Darwin_x86_64.tar.gz"
+    sha256 "5777cd74f12d913b5638b69dd8995a70d96383c3c4e504c70da9f39c178ff55f"
 
     def install
       bin.install "ourlock"
@@ -29,8 +29,8 @@ class Ourlock < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/ourlock/releases/download/v0.0.2/ourlock_Linux_x86_64.tar.gz"
-        sha256 "78f1211ebec3dc2952571085773bb1f0160b7fa20e09fadf89210dcb124f679b"
+        url "https://github.com/gkwa/ourlock/releases/download/v0.0.3/ourlock_Linux_x86_64.tar.gz"
+        sha256 "d76f4494dd7dd60b114cd344e8df2e70254f8a8c4566c08a970c0df5538a2d0f"
 
         def install
           bin.install "ourlock"
