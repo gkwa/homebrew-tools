@@ -5,11 +5,11 @@
 class Ouravocado < Formula
   desc ""
   homepage "https://github.com/gkwa/ouravocado"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
-    url "https://github.com/gkwa/ouravocado/releases/download/v0.0.5/ouravocado_Darwin_x86_64.tar.gz"
-    sha256 "1eb6a209ed24fceb2b97daa8c7ff55297529a95edc7bfa4da89cc96a8becffe2"
+    url "https://github.com/gkwa/ouravocado/releases/download/v0.0.6/ouravocado_Darwin_x86_64.tar.gz"
+    sha256 "fd69483454e3b94c39a4f4d7b56fc78212392a0a70b47af60be2bec3671c19cd"
 
     def install
       bin.install "ouravocado"
@@ -29,8 +29,8 @@ class Ouravocado < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/ouravocado/releases/download/v0.0.5/ouravocado_Linux_x86_64.tar.gz"
-        sha256 "989f13b0283bba308a860ae71ca43a833cd8f6fcc830a5a0182b9f581036f42d"
+        url "https://github.com/gkwa/ouravocado/releases/download/v0.0.6/ouravocado_Linux_x86_64.tar.gz"
+        sha256 "de9f6852e96ab2246f4113113f697d84452d5b52fe2143b798fcf9be2c67af5d"
 
         def install
           bin.install "ouravocado"
