@@ -5,11 +5,11 @@
 class Greengossip < Formula
   desc ""
   homepage "https://github.com/gkwa/greengossip"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
-    url "https://github.com/gkwa/greengossip/releases/download/v0.0.5/greengossip_Darwin_x86_64.tar.gz"
-    sha256 "1cc9ed1e7e51c1fe84d2db46bdc6afff604a7cfeef37d8156c7ea83e24721e9a"
+    url "https://github.com/gkwa/greengossip/releases/download/v0.0.6/greengossip_Darwin_x86_64.tar.gz"
+    sha256 "fef84869aa6feb6f097715b4d90b445092767542b08d76c5592c30feb88a1153"
 
     def install
       bin.install "greengossip"
@@ -29,8 +29,8 @@ class Greengossip < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/greengossip/releases/download/v0.0.5/greengossip_Linux_x86_64.tar.gz"
-        sha256 "3cef6684e4b704491094676bccf7bc12379cc96795799530c9d9c52218261bd2"
+        url "https://github.com/gkwa/greengossip/releases/download/v0.0.6/greengossip_Linux_x86_64.tar.gz"
+        sha256 "50c521fbe43e0509f1dd524c1cd94e2c1df1218b737fc548476f7e90b0d7622f"
 
         def install
           bin.install "greengossip"
