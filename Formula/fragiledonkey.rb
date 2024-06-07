@@ -5,17 +5,17 @@
 class Fragiledonkey < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.8"
+  version "0.0.10"
 
   on_macos do
-    url "https://github.com/gkwa/fragiledonkey/releases/download/v0.0.8/fragiledonkey_Darwin_x86_64.tar.gz"
-    sha256 "5a17ca27ead72781d9265fe6e4ab36c7e3d2e0ff4dc4db36bd858eaabd3aa347"
+    url "https://github.com/gkwa/fragiledonkey/releases/download/v0.0.10/fragiledonkey_Darwin_x86_64.tar.gz"
+    sha256 "ed74e919c385cb93699b0d98f1e49eedb6f0dd6da0027702d5dee2363326323b"
 
     def install
       bin.install "fragiledonkey"
     end
 
-    if Hardware::CPU.arm?
+    on_arm do
       def caveats
         <<~EOS
           The darwin_arm64 architecture is not supported for the Fragiledonkey
@@ -27,12 +27,14 @@ class Fragiledonkey < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/gkwa/fragiledonkey/releases/download/v0.0.8/fragiledonkey_Linux_x86_64.tar.gz"
-      sha256 "9d6fe0b2cd4d78c63506c484b4cc87752ea38c7cda0d14e8468ba7a94df2f766"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/gkwa/fragiledonkey/releases/download/v0.0.10/fragiledonkey_Linux_x86_64.tar.gz"
+        sha256 "64674c86d934e3c017f6c231e4a70832a4a3d5f0e81d70a94cd9ab6100760504"
 
-      def install
-        bin.install "fragiledonkey"
+        def install
+          bin.install "fragiledonkey"
+        end
       end
     end
   end
