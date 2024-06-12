@@ -5,11 +5,11 @@
 class Manywest < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
-    url "https://github.com/gkwa/manywest/releases/download/v0.0.6/manywest_Darwin_x86_64.tar.gz"
-    sha256 "7b5c86da3a792c018c96cec90e4bf3613f3499d12bcf05cc2962e17dece3ba03"
+    url "https://github.com/gkwa/manywest/releases/download/v0.0.7/manywest_Darwin_x86_64.tar.gz"
+    sha256 "d08aa65ca6bbf81b3bdfb0d440590d4f5ff5bf59f2e4ff2b61c750b2ad273661"
 
     def install
       bin.install "manywest"
@@ -29,8 +29,8 @@ class Manywest < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/manywest/releases/download/v0.0.6/manywest_Linux_x86_64.tar.gz"
-        sha256 "844184885ba70de52fef5f301811043adcce20bd250f2a1a060ece0598593e36"
+        url "https://github.com/gkwa/manywest/releases/download/v0.0.7/manywest_Linux_x86_64.tar.gz"
+        sha256 "00773f31fe8cdbc281415fdb5111af3d932a9e4db9d802573845892eee0c312a"
 
         def install
           bin.install "manywest"
