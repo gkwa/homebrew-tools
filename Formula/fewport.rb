@@ -5,11 +5,11 @@
 class Fewport < Formula
   desc ""
   homepage "https://github.com/gkwa/fewport"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    url "https://github.com/gkwa/fewport/releases/download/v0.0.1/fewport_Darwin_x86_64.tar.gz"
-    sha256 "a27f04041149da60cf16eb4d29a8d585881c21692ca1a922859d3eecc39e66ee"
+    url "https://github.com/gkwa/fewport/releases/download/v0.0.2/fewport_Darwin_x86_64.tar.gz"
+    sha256 "177d2a5acfcf3b689d50a31f344b680415699a64b8c646b440605c16e52c84ae"
 
     def install
       bin.install "fewport"
@@ -29,8 +29,8 @@ class Fewport < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/fewport/releases/download/v0.0.1/fewport_Linux_x86_64.tar.gz"
-        sha256 "d7a963edf54d74ff44ffc427775217761f3ebac3d448b23ece2c75012a60cf01"
+        url "https://github.com/gkwa/fewport/releases/download/v0.0.2/fewport_Linux_x86_64.tar.gz"
+        sha256 "a23133f2975c13a3dc7a4802d07c3b80247ae0e789c6118142bf2f9369712928"
 
         def install
           bin.install "fewport"
