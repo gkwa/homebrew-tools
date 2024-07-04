@@ -5,11 +5,11 @@
 class Limejoy < Formula
   desc ""
   homepage "https://github.com/gkwa/limejoy"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
-    url "https://github.com/gkwa/limejoy/releases/download/v0.0.4/limejoy_Darwin_x86_64.tar.gz"
-    sha256 "2ea74deb8d0253123479a7e25734cc855b7c7f0ff9055c9ede5b7d2ee102bd4d"
+    url "https://github.com/gkwa/limejoy/releases/download/v0.0.5/limejoy_Darwin_x86_64.tar.gz"
+    sha256 "0d1e7a14252f052bdb96710efb5b39937222174b31c12ce9f7014218f35753df"
 
     def install
       bin.install "limejoy"
@@ -29,8 +29,8 @@ class Limejoy < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/limejoy/releases/download/v0.0.4/limejoy_Linux_x86_64.tar.gz"
-        sha256 "6f0590af4b4950013fe69b52ab968c388b3fb2a736a4d2714163fbf31344fcda"
+        url "https://github.com/gkwa/limejoy/releases/download/v0.0.5/limejoy_Linux_x86_64.tar.gz"
+        sha256 "8f8f0843890a1b0dd67d4d4bf75951d7f2b9b42b91459a7af83a45a112593cbf"
 
         def install
           bin.install "limejoy"
