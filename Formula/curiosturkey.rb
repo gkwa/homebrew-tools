@@ -5,11 +5,11 @@
 class Curiosturkey < Formula
   desc ""
   homepage "https://github.com/gkwa/curiosturkey"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
-    url "https://github.com/gkwa/curiosturkey/releases/download/v0.0.6/curiosturkey_Darwin_x86_64.tar.gz"
-    sha256 "ce88cc85251b8d27f429706cc6987f9da2e3759c9f5bcb309d3e508c159fc15b"
+    url "https://github.com/gkwa/curiosturkey/releases/download/v0.0.7/curiosturkey_Darwin_x86_64.tar.gz"
+    sha256 "49bcc0759fff000ed916b5f19371348d4555e08f003cb1726729f35b6f890921"
 
     def install
       bin.install "curiosturkey"
@@ -29,8 +29,8 @@ class Curiosturkey < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/curiosturkey/releases/download/v0.0.6/curiosturkey_Linux_x86_64.tar.gz"
-        sha256 "d2fd0f647f645c7e887ffd981eb2ba8f22bb6b7959e0d26b117a3c553204cc01"
+        url "https://github.com/gkwa/curiosturkey/releases/download/v0.0.7/curiosturkey_Linux_x86_64.tar.gz"
+        sha256 "c5e2cf57826d1334637005e3145733fbfced7023c3f94c30ea336913f39dbefa"
 
         def install
           bin.install "curiosturkey"
