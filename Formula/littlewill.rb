@@ -5,11 +5,11 @@
 class Littlewill < Formula
   desc ""
   homepage "https://github.com/gkwa/littlewill"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
-    url "https://github.com/gkwa/littlewill/releases/download/v0.0.7/littlewill_Darwin_x86_64.tar.gz"
-    sha256 "e7fd1b12314d8e5e1c20d4066dfca2356c261eb1f5690f2ca23512eae4c121f2"
+    url "https://github.com/gkwa/littlewill/releases/download/v0.0.8/littlewill_Darwin_x86_64.tar.gz"
+    sha256 "2622d7fc30e551ec4edf18f55d6360ed3ce434410a9538cc0ab41bfa93d65e2c"
 
     def install
       bin.install "littlewill"
@@ -29,8 +29,8 @@ class Littlewill < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/littlewill/releases/download/v0.0.7/littlewill_Linux_x86_64.tar.gz"
-        sha256 "4912a71aeb495f1937d5aad3353f490b849dd1430b982797a64c0369297ad6ad"
+        url "https://github.com/gkwa/littlewill/releases/download/v0.0.8/littlewill_Linux_x86_64.tar.gz"
+        sha256 "7bb8ac4a45243dc3669a0f5a39667766d7777105c3d483b7ecd22cf7f7a9702a"
 
         def install
           bin.install "littlewill"
