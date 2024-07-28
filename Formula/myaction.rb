@@ -5,11 +5,11 @@
 class Myaction < Formula
   desc ""
   homepage "https://github.com/gkwa/myaction"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    url "https://github.com/gkwa/myaction/releases/download/v0.0.1/myaction_Darwin_x86_64.tar.gz"
-    sha256 "6e13ea8873338fc93390ec8dd02fe1fbb349ce84549d70350ab6839125228193"
+    url "https://github.com/gkwa/myaction/releases/download/v0.0.2/myaction_Darwin_x86_64.tar.gz"
+    sha256 "7bd659082b93f8242e8764f9a6461bda14344cd30ab8cab4a50db57658c92691"
 
     def install
       bin.install "myaction"
@@ -29,8 +29,8 @@ class Myaction < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/myaction/releases/download/v0.0.1/myaction_Linux_x86_64.tar.gz"
-        sha256 "e3cbccbe64c5bfcedf5d163c67b52c387d63e9cb926a5c66462b7996cf91f297"
+        url "https://github.com/gkwa/myaction/releases/download/v0.0.2/myaction_Linux_x86_64.tar.gz"
+        sha256 "975b7f9171d84885f1ad553febf67da2935920f16e7f3c3ec8a3057f8c84b2b2"
 
         def install
           bin.install "myaction"
