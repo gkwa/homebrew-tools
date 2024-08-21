@@ -5,11 +5,11 @@
 class Lessmay < Formula
   desc ""
   homepage "https://github.com/gkwa/lessmay"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
-    url "https://github.com/gkwa/lessmay/releases/download/v0.0.7/lessmay_Darwin_x86_64.tar.gz"
-    sha256 "ddd43e76a1a2e7c8c8adc1ff52061dbb725e273cf5ae111a030a7fd2c818f34c"
+    url "https://github.com/gkwa/lessmay/releases/download/v0.0.8/lessmay_Darwin_x86_64.tar.gz"
+    sha256 "5a04ff388ec88ad8dccd3aded4c0b10ab609a19d5fb0e4e22e092caf2e87dd1a"
 
     def install
       bin.install "lessmay"
@@ -29,8 +29,8 @@ class Lessmay < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/lessmay/releases/download/v0.0.7/lessmay_Linux_x86_64.tar.gz"
-        sha256 "bfc8652edcbe8a6833711e2d8642580cdd0b556da611977c4e4f1cb5724f578f"
+        url "https://github.com/gkwa/lessmay/releases/download/v0.0.8/lessmay_Linux_x86_64.tar.gz"
+        sha256 "fa50cdf96a5f8aa1fca8eb9c802fe1b1ad5677583458f2d17de3fd1df12b03bb"
 
         def install
           bin.install "lessmay"
