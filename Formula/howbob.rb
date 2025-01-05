@@ -5,11 +5,11 @@
 class Howbob < Formula
   desc ""
   homepage "https://github.com/gkwa/howbob"
-  version "0.0.8"
+  version "0.0.9"
 
   on_macos do
-    url "https://github.com/gkwa/howbob/releases/download/v0.0.8/howbob_Darwin_x86_64.tar.gz"
-    sha256 "2d5c566e6b3d89f461d2031ffaaebe35f93a5d3b5d2fdbd3075d15b2358a5bbc"
+    url "https://github.com/gkwa/howbob/releases/download/v0.0.9/howbob_Darwin_x86_64.tar.gz"
+    sha256 "91df360b59daefeeac2079f96832bc3d57273262220f6cca567bd1d7c26cce33"
 
     def install
       bin.install "howbob"
@@ -29,8 +29,8 @@ class Howbob < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/howbob/releases/download/v0.0.8/howbob_Linux_x86_64.tar.gz"
-        sha256 "134b1e8b24d44b91d5d39945ccbbd57095b67add568bd0a8eba789120922191e"
+        url "https://github.com/gkwa/howbob/releases/download/v0.0.9/howbob_Linux_x86_64.tar.gz"
+        sha256 "be5c685c416630e0316376b897b7a23b3431b673472102c7326cd585aa569dc0"
 
         def install
           bin.install "howbob"
