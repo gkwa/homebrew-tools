@@ -5,17 +5,17 @@
 class Myville < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.13"
+  version "0.0.14"
 
   on_macos do
-    url "https://github.com/gkwa/myville/releases/download/v0.0.13/myville_Darwin_x86_64.tar.gz"
-    sha256 "a5ca02d347f55dfbf3f9623a2dd7b5733293e9771476da5dedb88b4ad3bf44b0"
+    url "https://github.com/gkwa/myville/releases/download/v0.0.14/myville_Darwin_x86_64.tar.gz"
+    sha256 "01f482c2fb2a51a85aa31a5646f9db1a8ce4fe7b61ce298dade53239934eff0b"
 
     def install
       bin.install "myville"
     end
 
-    on_arm do
+    if Hardware::CPU.arm?
       def caveats
         <<~EOS
           The darwin_arm64 architecture is not supported for the Myville
@@ -27,10 +27,10 @@ class Myville < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/myville/releases/download/v0.0.13/myville_Linux_x86_64.tar.gz"
-        sha256 "571c93b400d0da847e5c4f2226f2d68cc40b2a1b4be1d4e030d0ccdfa35089b1"
+        url "https://github.com/gkwa/myville/releases/download/v0.0.14/myville_Linux_x86_64.tar.gz"
+        sha256 "0ef36efe8bc8194e2e5776336d343f7be931ea9f203ec6ef43fe1a3756bf45d2"
 
         def install
           bin.install "myville"
