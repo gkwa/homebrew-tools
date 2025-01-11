@@ -5,11 +5,11 @@
 class Myville < Formula
   desc ""
   homepage "https://github.com/taylormonacelli/homebrew-tools"
-  version "0.0.15"
+  version "0.0.16"
 
   on_macos do
-    url "https://github.com/gkwa/myville/releases/download/v0.0.15/myville_Darwin_x86_64.tar.gz"
-    sha256 "4393cd27f7405386301c6f3a31b39c1a774613bb7fdc52aeca5acd2ec7f02f0e"
+    url "https://github.com/gkwa/myville/releases/download/v0.0.16/myville_Darwin_x86_64.tar.gz"
+    sha256 "d397955dd1cefaaeee2454d2586064862efa9c51fe579c5cb8c066bff011b52a"
 
     def install
       bin.install "myville"
@@ -29,8 +29,8 @@ class Myville < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/myville/releases/download/v0.0.15/myville_Linux_x86_64.tar.gz"
-        sha256 "bf4bb09f459646347dcceb81aa954bdc5d6504ac0f69f8b547c69ee8658f03b9"
+        url "https://github.com/gkwa/myville/releases/download/v0.0.16/myville_Linux_x86_64.tar.gz"
+        sha256 "cbbf99365aa2de2a3064a6c2e000b25b5d2b57e8e70ea16b44276c0bf29621ae"
 
         def install
           bin.install "myville"
