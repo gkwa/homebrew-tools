@@ -5,17 +5,17 @@
 class Nearwait < Formula
   desc ""
   homepage "https://github.com/gkwa/nearwait"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
-    url "https://github.com/gkwa/nearwait/releases/download/v0.0.7/nearwait_Darwin_x86_64.tar.gz"
-    sha256 "835b617dcc1173f02210c10018b452de585d8bb1f766f71010e31800a591772b"
+    url "https://github.com/gkwa/nearwait/releases/download/v0.0.8/nearwait_Darwin_x86_64.tar.gz"
+    sha256 "c26bf7762dc370042327b5bb289132a4ab28d8e05569808d5398ffde7e55c18b"
 
     def install
       bin.install "nearwait"
     end
 
-    on_arm do
+    if Hardware::CPU.arm?
       def caveats
         <<~EOS
           The darwin_arm64 architecture is not supported for the Nearwait
@@ -27,10 +27,10 @@ class Nearwait < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/nearwait/releases/download/v0.0.7/nearwait_Linux_x86_64.tar.gz"
-        sha256 "180518cb6b34a57888c2d6130380f2f3f05d20a28154decac399186d5b82bf73"
+        url "https://github.com/gkwa/nearwait/releases/download/v0.0.8/nearwait_Linux_x86_64.tar.gz"
+        sha256 "a2f438beccb3102fc1f22701692d90bbe683c88a69e8db15abfa9493df928171"
 
         def install
           bin.install "nearwait"
