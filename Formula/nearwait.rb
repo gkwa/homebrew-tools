@@ -5,11 +5,11 @@
 class Nearwait < Formula
   desc ""
   homepage "https://github.com/gkwa/nearwait"
-  version "0.0.9"
+  version "0.1.0"
 
   on_macos do
-    url "https://github.com/gkwa/nearwait/releases/download/v0.0.9/nearwait_Darwin_x86_64.tar.gz"
-    sha256 "747fb9dd48e01ca59bf818fd4706896531dc8cf6fec580da60309aeb4d8290a9"
+    url "https://github.com/gkwa/nearwait/releases/download/v0.1.0/nearwait_Darwin_x86_64.tar.gz"
+    sha256 "5784381dcb79ee71bf5556675bc4820438e398f40ccefb4ba52d2b099dde730b"
 
     def install
       bin.install "nearwait"
@@ -29,8 +29,8 @@ class Nearwait < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/gkwa/nearwait/releases/download/v0.0.9/nearwait_Linux_x86_64.tar.gz"
-        sha256 "42d2f3f0af62d8e474090103c02f87951a633e1ab2beb6d8dd5e3248fd553c91"
+        url "https://github.com/gkwa/nearwait/releases/download/v0.1.0/nearwait_Linux_x86_64.tar.gz"
+        sha256 "4dee438ba9339f543388fcba37ad91904b2d37a325ecd98be4d62ec4d1253c02"
 
         def install
           bin.install "nearwait"
