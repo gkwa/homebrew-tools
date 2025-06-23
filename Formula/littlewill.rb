@@ -8,8 +8,8 @@ class Littlewill < Formula
   version "0.0.20"
 
   on_macos do
-    url "https://github.com/gkwa/littlewill/releases/download/v0.0.20/littlewill_Darwin_x86_64.tar.gz"
-    sha256 "38b4fa790a791f9178c595b5920bb0dc497a95f93fdab3e95a368c343f1c3c41"
+    url "https://github.com/gkwa/littlewill/archive/refs/tags/v0.0.21.tar.gz"
+    sha256 "b472da63726f8d0f265788b39b6c5e27881f09e6be6aa777fa9d28520583af4a"
 
     def install
       bin.install "littlewill"
