@@ -8,8 +8,8 @@ class Mylime < Formula
   version "0.0.3"
 
   on_macos do
-    url "https://github.com/gkwa/mylime/releases/download/v0.0.3/mylime_Darwin_x86_64.tar.gz"
-    sha256 "6b0ee9b85e2fd34c8922d8469e9b16309db27ac7e8bf05250aa981d5dfe3048b"
+    url "https://github.com/gkwa/mylime/archive/refs/tags/v0.0.4.tar.gz"
+    sha256 "fb99f67d013f4906e83426e0bd5eccf3973329e9ad667b26edfc2fe33cf602d1"
 
     def install
       bin.install "mylime"
